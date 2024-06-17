@@ -7,7 +7,7 @@ const SearchBar = ({ onData }) => {
 
   const getMovie = async () => {
     const response = await axios.get(
-      `http://www.omdbapi.com/?apikey=6127562e&t=${movie}&s=${movie}&plot='full'`
+      `https://www.omdbapi.com/?apikey=6127562e&t=${movie}&s=${movie}&plot='full'`
     );
     console.log(response.data.Search);
     const movieData = response.data.Search;
